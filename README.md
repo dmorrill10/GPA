@@ -1,12 +1,12 @@
-# Dmorrill10::Utils
+# Gpa
 
-Group of random Ruby mixin utility functions.
+Academic course data manipulation and GPA calculation module.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'dmorrill10-utils'
+    gem 'gpa'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install dmorrill10-utils
+    $ gem install gpa
 
 ## Contributing
 
