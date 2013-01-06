@@ -192,6 +192,8 @@ class Course
     @grade = grade
     @units = units
     @date_completed = date_completed
+
+    # @todo This is totally wrong, but I'm not using this right now so I'm not in a rush to fix it.
     @faculty = if faculty.nil?
       UNIVERSITY_OF_ALBERTA_SUBJECT_HIERARCHY[@subject]
     else
