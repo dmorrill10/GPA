@@ -1,12 +1,3 @@
-# @todo Move to utils
-class Object
-  def to_h
-    Hash[instance_variables.map do |var| 
-      [var[1..-1].to_sym, instance_variable_get(var)]
-    end]
-  end
-end
-
 class String
   # @returns [Numeric] Number of grade points for this grade
   def points
@@ -185,7 +176,7 @@ class Course
     # @returns [String]
     :faculty
   )
-# @todo thing-to-do
+
   def initialize(
     subject, 
     number,

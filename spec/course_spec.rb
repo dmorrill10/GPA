@@ -20,7 +20,7 @@ ExpectedCourse = Struct.new(
   # @returns [Numeric]
   :grade_points  
 )
-
+# TODO
 describe Course do
   it "should initialize properly" do
     @expected_course = ExpectedCourse.new(

@@ -3,6 +3,8 @@ require_relative 'support/spec_helper'
 
 require_relative '../lib/gpa'
 
+require 'dmorrill10-utils/object'
+
 describe Gpa do  
   it "should load courses from a YAML file properly" do
     Gpa.load_courses_from_file(TEST_COURSES_FILE).map do |course|
