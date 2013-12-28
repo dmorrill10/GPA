@@ -2,24 +2,7 @@
 require 'simplecov'
 SimpleCov.start
 
-begin
-  require 'turn/autorun'
-
-  Turn.config do |c|
-    # use one of output formats:
-    # :outline  - turn's original case/test outline mode [default]
-    # :progress - indicates progress with progress bar
-    # :dotted   - test/unit's traditional dot-progress mode
-    # :pretty   - new pretty reporter
-    # :marshal  - dump output as YAML (normal run mode only)
-    # :cue      - interactive testing
-    # c.format  = :pretty
-    c.format  = :dotted
-    # use humanized test names (works only with :outline format)
-    c.natural = true
-  end
-rescue LoadError
-end
+require 'minitest/autorun'
 
 TEST_COURSES_FILE = File.expand_path('../courses.yml', __FILE__)
 EXPECTED_COURSES_IN_HASH_FORM_FROM_COURSES_FILE = [
