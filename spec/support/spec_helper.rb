@@ -7,41 +7,41 @@ require 'minitest/autorun'
 TEST_COURSES_FILE = File.expand_path('../courses.yml', __FILE__)
 EXPECTED_COURSES_IN_HASH_FORM_FROM_COURSES_FILE = [
   {
-             :subject => "WRS",
-              :number => 101,
-                :name => "Exploring Writing",
+             :subject => "BIOL",
+              :number => 659,
+                :name => "BIOL Course name",
                :grade => "B",
                :units => 27,
       :date_completed => Date.parse('2008-12-01')
   },
   {
-             :subject => "SCI",
-              :number => 100,
-                :name => "Integrated Science",
+             :subject => "PHYS",
+              :number => 222,
+                :name => "Course name",
                :grade => "A-",
                :units => 3,
-      :date_completed => Date.parse('2009-04-01')
+      :date_completed => Date.parse('2009-09-01')
   },
   {
-             :subject => "CMPUT",
+             :subject => "ECON",
               :number => 175,
-                :name => "Intro to Foundations of Computing II",
+                :name => "Course name",
                :grade => "A+",
                :units => 3,
       :date_completed => Date.parse('2009-12-01')
   },
   {
-             :subject => "CMPUT",
+             :subject => "ECON",
               :number => 272,
-                :name => "Formal Systems and Logic",
+                :name => "Course name",
                :grade => "A+",
                :units => 3,
       :date_completed => Date.parse('2009-12-01')
   },
   {
              :subject => "DRAMA",
-              :number => 247,
-                :name => "Intro to Oral Communication",
+              :number => 297,
+                :name => "Course name",
                :grade => "B+",
                :units => 3,
       :date_completed => Date.parse('2009-12-01')
@@ -49,79 +49,79 @@ EXPECTED_COURSES_IN_HASH_FORM_FROM_COURSES_FILE = [
   {
              :subject => "MATH",
               :number => 120,
-                :name => "Basic Linear Algebra I",
+                :name => "Course name",
                :grade => "A",
                :units => 3,
       :date_completed => Date.parse('2009-12-01')
   },
   {
-             :subject => "CMPUT",
+             :subject => "ECON",
               :number => 201,
-                :name => "Practical Programming Methodology",
+                :name => "Course name",
                :grade => "A+",
                :units => 3,
-      :date_completed => Date.parse('2010-04-01')
+      :date_completed => Date.parse('2010-09-01')
   },
   {
-             :subject => "CMPUT",
-              :number => 204,
-                :name => "Algorithms I",
+             :subject => "ECON",
+              :number => 209,
+                :name => "Course name",
                :grade => "A+",
                :units => 3,
-      :date_completed => Date.parse('2010-04-01')
+      :date_completed => Date.parse('2010-09-01')
   },
   {
-             :subject => "CMPUT",
+             :subject => "ECON",
               :number => 229,
-                :name => "Computer Organization and Architecture I",
+                :name => "Course name",
                :grade => "A+",
                :units => 3,
-      :date_completed => Date.parse('2010-04-01')
+      :date_completed => Date.parse('2010-09-01')
   },
   {
              :subject => "ENGL",
               :number => 125,
-                :name => "Aboriginal Writing",
+                :name => "Course name",
                :grade => "A",
                :units => 3,
-      :date_completed => Date.parse('2010-04-01')
+      :date_completed => Date.parse('2010-09-01')
   },
   {
              :subject => "PHIL",
               :number => 215,
-                :name => "Epistemology",
+                :name => "Course name",
                :grade => "A",
                :units => 3,
-      :date_completed => Date.parse('2010-04-01')
+      :date_completed => Date.parse('2010-09-01')
   },
   {
              :subject => "PHIL",
               :number => 265,
-                :name => "Philosophy of Science",
+                :name => "Course name",
                :grade => "A",
                :units => 3,
       :date_completed => Date.parse('2010-08-01')
   },
   {
-             :subject => "CMPUT",
+             :subject => "ECON",
               :number => 325,
-                :name => "Non-procedural Programming Languages",
+                :name => "Course name",
                :grade => "A+",
                :units => 3,
       :date_completed => Date.parse('2010-12-01')
   },
   {
-             :subject => "CMPUT",
+             :subject => "ECON",
               :number => 366,
-                :name => "Intelligent Systems",
+                :name => "Course name",
                :grade => "A+",
                :units => 3,
       :date_completed => Date.parse('2010-12-01')
   },
   {
              :subject => "MATH",
-              :number => 214,
-                :name => "Intermediate Calculus I",
+              :number => 219,
+                :name => "Course name",
                :grade => "A-",
                :units => 3,
       :date_completed => Date.parse('2010-12-01')
@@ -129,7 +129,7 @@ EXPECTED_COURSES_IN_HASH_FORM_FROM_COURSES_FILE = [
   {
              :subject => "MATH",
               :number => 225,
-                :name => "Linear Algebra II",
+                :name => "Course name",
                :grade => "A-",
                :units => 3,
       :date_completed => Date.parse('2010-12-01')
@@ -137,79 +137,79 @@ EXPECTED_COURSES_IN_HASH_FORM_FROM_COURSES_FILE = [
   {
              :subject => "STAT",
               :number => 265,
-                :name => "Statistics I",
+                :name => "Course name",
                :grade => "A",
                :units => 3,
       :date_completed => Date.parse('2010-12-01')
   },
   {
-             :subject => "CMPUT",
+             :subject => "ECON",
               :number => 379,
-                :name => "Operating System Concepts",
+                :name => "Course name",
                :grade => "A-",
                :units => 3,
-      :date_completed => Date.parse('2011-04-01')
+      :date_completed => Date.parse('2011-09-01')
   },
   {
-             :subject => "CMPUT",
+             :subject => "ECON",
               :number => 396,
-                :name => "Topics in Computing Science: Design and Development of Mobile Search and Navigation Application",
+                :name => "Course name",
                :grade => "A",
                :units => 3,
-      :date_completed => Date.parse('2011-04-01')
+      :date_completed => Date.parse('2011-09-01')
   },
   {
-             :subject => "CMPUT",
-              :number => 412,
-                :name => "Experimental mobile robotics",
+             :subject => "ECON",
+              :number => 912,
+                :name => "Course name",
                :grade => "A+",
                :units => 3,
-      :date_completed => Date.parse('2011-04-01')
+      :date_completed => Date.parse('2011-09-01')
   },
   {
              :subject => "STAT",
               :number => 266,
-                :name => "Statistics II",
+                :name => "Course name",
                :grade => "A+",
                :units => 3,
-      :date_completed => Date.parse('2011-04-01')
+      :date_completed => Date.parse('2011-09-01')
   },
   {
-             :subject => "CMPUT",
+             :subject => "ECON",
               :number => 399,
-                :name => "Topics in Computing Science: Object-Oriented Programming for Web Applications",
+                :name => "Course name",
                :grade => "A+",
                :units => 3,
       :date_completed => Date.parse('2011-08-01')
   },
   {
-             :subject => "CMPUT",
-              :number => 400,
-                :name => "Industrial Internship Practicum",
-               :grade => nil,
+             :subject => "ECON",
+              :number => 900,
+                :name => "Course name",
+               :grade => "N/A",
                :units => 3,
       :date_completed => Date.parse('2012-12-01')
   },
   {
-             :subject => "CMPUT",
-              :number => 418,
-                :name => "Numerical Methods I",
+             :subject => "ECON",
+              :number => 918,
+                :name => "Course name",
                :grade => "A",
                :units => 3,
       :date_completed => Date.parse('2012-12-01')
   },
   {
-             :subject => "CMPUT",
-              :number => 466,
-                :name => "Machine Learning",
+             :subject => "ECON",
+              :number => 695,
+                :name => "Course name",
                :grade => "A+",
                :units => 3,
       :date_completed => Date.parse('2012-12-01')
   },
   {
              :subject => "STAT",
-              :number => 371,
-                :name => "Probability and Stochastic Processes",
+              :number => 699,
+                :name => "Course name",
                :grade => "A",
                :units => 3,
       :date_completed => Date.parse('2012-12-01')

@@ -18,30 +18,30 @@ ExpectedCourse = Struct.new(
   # @returns [String]
   :faculty,
   # @returns [Numeric]
-  :grade_points  
+  :grade_points
 )
-# TODO
-describe Course do
+describe Gpa::Course do
   it "should initialize properly" do
     @expected_course = ExpectedCourse.new(
-             :subject => "WRS",
-              :number => 101,
-                :name => "Exploring Writing",
-               :grade => "B",
-               :units => 27,
-      :date_completed => Date.parse('2008-12-01'),
-      :faculty => 'Arts',
-      :grade_points => 9.0
+      "WRS",
+      123,
+      "C4 Name",
+      "B",
+      2,
+      Date.parse('2008-12-01'),
+      'Arts',
+      6.0
     )
-    @patient = Course.new(
-      @expected_course.subject, 
+    @patient = Gpa::Course.new(
+      @expected_course.subject,
       @expected_course.number,
       @expected_course.name,
       @expected_course.grade,
       @expected_course.units,
-      @expected_course.date_completed
+      @expected_course.date_completed,
+      @expected_course.faculty
     )
-    
+
     check_patient
   end
 
